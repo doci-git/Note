@@ -1,0 +1,138 @@
+body {
+    background-color: #e5e5e5;
+    font-family: monospace;
+    margin: 15px;
+}
+
+.sH {
+    display: none;
+}
+
+#pg1 {
+    margin-bottom: 120px;
+}
+
+#list > .empty {
+    color: #777;
+    font-size: 11px;
+    margin-top: 30px;
+    text-align: center;
+}
+
+#list > .empty b {
+    color: #348964;
+}
+
+#list > .note {
+    background-color: #eee;
+    border-radius: 2px;
+    box-shadow: 1px 1px 1px #888;
+    cursor: pointer;
+    margin-bottom: 8px;
+    min-height: 50px;
+    padding: 15px;
+    transition: transform .2s;
+    -webkit-transition: -webkit-transform .2s;
+    -ms-transition: -ms-transform .2s;
+    -webkit-tap-highlight-color: transparent;
+}
+
+#list > .note:active {
+    transform: scale(0.97);
+    -webkit-transform: scale(0.97);
+    -ms-transform: scale(0.97);
+}
+
+#list > .note > .title {
+    font-weight: bold;
+    padding-bottom: 8px;
+    pointer-events: none;
+}
+
+#list > .note > .body {
+    pointer-events: none;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+}
+
+.addButton {
+    background-color: #348964;
+    border-radius: 50%;
+    bottom: 30px;
+    cursor: pointer;
+    font-size: 40px;
+    padding: 8px 19px;
+    position: fixed;
+    right: 30px;
+    text-shadow: .5px .5px 1px #888;
+    z-index: 1;
+    -webkit-tap-highlight-color: transparent;
+}
+
+.addButton:active {
+    box-shadow: 0 0 12px #030 inset;
+}
+
+.eTop {
+    position: absolute;
+    right: 40px;
+    top: 0;
+}
+
+.eTop span {
+    border-radius: 0 0 2px 2px;
+    box-shadow: 0 0 2px #ccc;
+    cursor: pointer;
+    display: inline-block;
+    font-weight: 300;
+    padding: 8px 15px;
+    -webkit-tap-highlight-color: transparent;
+}
+
+.eTop span:active {
+    box-shadow: 0 0 2px #ccc inset;
+}
+
+.eTop > .delButton {
+    background-color: #fcc;
+}
+
+.eTop > .saveButton {
+    background-color:#cfc;
+}
+
+.eBody {
+    margin-top: 40px;
+}
+
+#eT {
+    background: transparent;
+    border: 0;
+    border-bottom: solid 1px #ccc;
+    box-sizing: border-box;
+    display: block;
+    font-size: 16px;
+    font-weight: bold;
+    outline: 0;
+    margin-bottom: 8px;
+    padding: 8px;
+    width: 100%;
+}
+
+#eB {
+    background: transparent;
+    border: 0;
+    box-sizing: border-box;
+    display: block;
+    outline: 0;
+    overflow-y: show;
+    padding: 8px;
+    width: 100%;
+}
+
+#eL {
+    color: #777;
+    font-size: 11px;
+    padding: 5px 0;
+    text-align: right;
+}
